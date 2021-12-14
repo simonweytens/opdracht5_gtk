@@ -1,3 +1,5 @@
 gcc `pkg-config --cflags --libs gtk+-3.0` main.c -o main
 
-gcc `pkg-config --cflags --libs gtk+-3.0` main.c -o main -PJ_RPI
+gcc `pkg-config --cflags --libs gtk+-3.0` main.c -l -PJ_RPI -o main 
+
+gcc `pkg-config --cflags --libs gtk+-3.0` main.c -l PJ_RPI  -o main
